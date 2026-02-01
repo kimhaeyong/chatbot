@@ -1,19 +1,19 @@
-# 💬 Chatbot template
+# 🧳 Carrier-Free Travel Decision Miniapp (MVP)
 
-A simple Streamlit app that shows how to build a chatbot using OpenAI's GPT-3.5.
+React + Vite 기반의 미니앱으로, 예약/결제 없이 이동 경로를 비교하고 편안함 중심으로 의사결정을 돕습니다.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-template.streamlit.app/)
+## Features
+- Language selection (Korean / English with Korean subtitle)
+- Route input with comfort preferences
+- 3-option route comparison cards (A추천/B균형/C관광)
+- Map view with polyline and segment warnings
+- Report summary with mocked PDF link
+- Consent-based usage log and fatigue feedback
+- OpenAPI-like API interface panel
 
-### How to run it on your own machine
+## Run locally
 
-1. Install the requirements
-
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+```bash
+npm install
+npm run dev
+```

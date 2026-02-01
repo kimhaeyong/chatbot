@@ -1,0 +1,318 @@
+:root {
+  font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+  color: #101828;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #e4e7ec;
+}
+
+.header h1 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+}
+
+.header p {
+  margin: 0;
+  color: #475467;
+  white-space: pre-line;
+}
+
+.language-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f2f4f7;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.language-pill select {
+  border: none;
+  background: transparent;
+  font-weight: 600;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  padding: 24px 40px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar button {
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.sidebar button.active {
+  border-color: #1d4ed8;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.weights {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #eaecf0;
+}
+
+.weights ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.weights li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panel h2 {
+  margin: 0 0 8px;
+}
+
+.panel p {
+  margin: 0 0 16px;
+  color: #475467;
+  white-space: pre-line;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #eaecf0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.chip {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eff8ff;
+  color: #175cd3;
+  font-size: 12px;
+}
+
+.card ul,
+.card ol {
+  margin: 0;
+  padding-left: 20px;
+  color: #344054;
+}
+
+.card ol {
+  padding-left: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+
+input,
+select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  font-size: 14px;
+}
+
+.toggle-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.toggle-group label {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  background: #f8fafc;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.primary,
+.secondary {
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+.secondary {
+  background: #f2f4f7;
+  color: #101828;
+}
+
+.divider {
+  height: 1px;
+  background: #eaecf0;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+  stroke: #2563eb;
+  stroke-width: 4;
+  fill: none;
+}
+
+.map rect {
+  fill: #f4f7ff;
+  stroke: #d0d5dd;
+}
+
+.map circle {
+  fill: #2563eb;
+}
+
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  background: #fff6ed;
+  color: #b93815;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.success {
+  border-color: #12b76a;
+  background: #ecfdf3;
+}
+
+.log-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.chip-group,
+.chip-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.chip-group button,
+.chip-list li {
+  background: #f2f4f7;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.toggle {
+  flex-direction: row;
+  align-items: center;
+}
+
+.code-block {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+@media (max-width: 960px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
